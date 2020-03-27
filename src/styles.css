@@ -1135,6 +1135,7 @@ ol {
 
 .product-item {
 	margin-bottom: 26px;
+border: thick double 		#DCDCDC;
 }
 
 .product-item:hover .pi-pic .icon {
@@ -1143,7 +1144,7 @@ ol {
 }
 
 .product-item:hover .pi-pic ul {
-	bottom: 0;
+	bottom: 5;
 }
 
 .product-item .pi-pic {
