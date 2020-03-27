@@ -13,9 +13,10 @@ import { ProductService } from './product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ManageComponent } from './manage/manage.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule, FormsModule,AngularFontAwesomeModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, HomeComponent, ProductAddComponent, ManageComponent, ProductEditComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, HomeComponent, ProductAddComponent, ManageComponent, ProductEditComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

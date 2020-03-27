@@ -7,11 +7,32 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+.single-product-area .zigzag-bottom {background-color: #f4f4f4}
+
+.single-product-area {
+  padding: 80px 0 130px;
+}
+.product-inner-price > ins {
+    color: 	#DAA520;
+    font-weight: 700;
+    font-size:30px;
+    margin-right: 10px;
+    text-decoration: none;
+}
 .first{
   text-align: center;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 50px;
+}
+.quantity {
+    float: left;
+    margin-right: 15px;
+}
+.quantity input[type="number"] {
+    border: 1px solid #5a88ca;
+    padding: 5px;
+    width: 50px;
 }
 h1,
 h2,
@@ -94,13 +115,13 @@ ol {
 .section-title .product-price {
 	font-size: 24px;
 	font-weight: 700;
-	color: #e7ab3c;
+	color: #CD853F;
 }
 
 .section-title .product-price span {
 	font-size: 16px;
 	font-weight: 400;
-	color: #636363;
+	color: #FFA500;
 }
 
 .section-title h2 {
@@ -1153,7 +1174,8 @@ border: thick double 		#DCDCDC;
 }
 
 .product-item .pi-pic img {
-	min-width: 100%;
+	width: 262px;
+  height: 262px;
 }
 
 .product-item .pi-pic .sale {
@@ -1237,7 +1259,7 @@ border: thick double 		#DCDCDC;
 }
 
 .product-item .pi-text .product-price {
-	color: #e7ab3c;
+	color: #CD853F;
 	font-size: 20px;
 	font-weight: 700;
 }
