@@ -1,0 +1,21 @@
+<h2 >Edit Product</h2>
+<form class="w-50 mx-auto mt-3" *ngIf="product">
+
+  <div class="form-group">
+    
+   Name: <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
+   <br>
+   Price: <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+     <br>
+ Desc:   <input type="text" name="desc" class="form-control"placeholder="Price" [(ngModel)]="product.desc">
+     <br>
+  Status:  <input  type="text" name="status" class="form-control"placeholder="Price" [(ngModel)]="product.status">
+     <br>
+   Img: <input type="text" name="img" class="form-control"placeholder="Price" [(ngModel)]="product.img">
+     <br>
+  </div>
+  <div class="first">
+     <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
+  </div>
+ 
+</form>

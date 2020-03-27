@@ -1,0 +1,30 @@
+<form class="w-50 mx-auto mt-3">
+
+    <div class="form-group">
+
+      <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
+      <br>
+      <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+      <br>
+       <input type="text" name="desc" class="form-control"placeholder="Desc" [(ngModel)]="product.desc">
+       <br>
+            <input type="text"      
+                    class="form-control"      
+                    value="{{product.status ? 'In stock' : 'Out stock'}}"
+                    readonly
+                />
+      <br>
+                <input type="checkbox" 
+                  name="status"
+                  class="form-control"
+                  [(ngModel)]="product.status"
+                  checked
+                />
+                <br>
+        <input type="text" name="img" class="form-control"placeholder="Src" [(ngModel)]="product.img">
+    </div>
+    <div class="first">
+ <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+    </div>
+   
+  </form>
