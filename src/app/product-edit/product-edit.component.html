@@ -13,7 +13,21 @@
      <br>
    Img: <input type="text" name="img" class="form-control"placeholder="Price" [(ngModel)]="product.img">
      <br>
+           <input type="text"      
+                    class="form-control"      
+                    value="{{product.status ? 'In stock' : 'Out stock'}}"
+                    readonly
+                />
+      <br>
+                <input type="checkbox" 
+                  name="status"
+                  class="form-control"
+                  [(ngModel)]="product.status"
+                  checked
+                />
+                <br>
   </div>
+
   <div class="first">
      <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
   </div>
