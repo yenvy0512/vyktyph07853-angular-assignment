@@ -646,6 +646,7 @@ ol {
 }
 
 .nav-item {
+  height: 51px;
 	background: #252525;
 	display: -webkit-box;
 	display: -ms-flexbox;
