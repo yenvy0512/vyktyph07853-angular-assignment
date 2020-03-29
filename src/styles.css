@@ -7,12 +7,21 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+
 .one{
   margin-top: 50px;
+  margin-left: -50px;
 border-style: ridge;
     padding-left: 50px;
 
  padding-right: 50px;
+}
+.one1{
+  margin-top: 50px;
+border-style: ridge;
+    padding-left: 150px;
+padding-top: 50px;
+ padding-right: 150px;
 }
 .single-product-area .zigzag-bottom {background-color: #f4f4f4}
 
