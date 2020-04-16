@@ -23,8 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-              
+              "src/styles.css",
+               "src/css/bootstrap.min.css",
+              "src/css/font-awesome.css",
+  
+              "src/css/clndr.css",
+               "src/css/custom.css",
+               "src/css/jqvmap.css",
+                "src/css/lines.css",
+                 "src/css/style.css"
             ],
             "scripts": []
           },
