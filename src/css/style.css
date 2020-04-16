@@ -12,7 +12,7 @@ p {margin: 0;}
 html, body{
   	font-family: 'Roboto', sans-serif;
     font-size: 100%;
-  	background:#000;
+  	background: #b56730;
   	overflow-x: hidden;
 }
 body a{
@@ -223,7 +223,7 @@ background-color: #f8f9fa00;
     font-family: 'Roboto', sans-serif;
 }
 nav.top1.navbar.navbar-default.navbar-static-top {
-  background-color:rgb(6, 217, 149);
+  background-color:rgb(236, 195, 57);
   font-family: 'Roboto', sans-serif;
 }
 .navbar-default .navbar-brand {
