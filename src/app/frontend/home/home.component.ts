@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
-import { ActivatedRoute } from '@angular/router';
 import { Product } from '../Product';
-
-
+import { ProductService } from '../../product.service';
 @Component({
-  selector: 'app-manage',
-  templateUrl: './manage.component.html',
-  styleUrls: ['./manage.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class ManageComponent implements OnInit {
-  selected: Product;
+export class HomeComponent implements OnInit {
+
+selected: Product;
   products: Product[];
 
   constructor(
@@ -23,18 +21,18 @@ export class ManageComponent implements OnInit {
     this.getProducts();
   }
  
+
   getProducts(){
     this.productService.getProducts().subscribe(data => {
       console.log(data)
       this.products = data;
      });
    }
-   removeItem(id){
-    this.productService.removeProduct(id).subscribe(response => {
-     this.products = this.products.filter(product => product.id != response.id);
-   })
-    // this.products = this.products.filter(product => product.id != id);
-  }
+  // removeItem(id){
+  //   this.products = this.productService.removeProduct(id);
+  //   // this.products = this.products.filter(product => product.id != id);
+  // }
+
 
 
   // changeStatus(){
