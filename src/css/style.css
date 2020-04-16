@@ -219,8 +219,8 @@ body a{
   min-width: 0;
 }
 .navbar-default.sidebar {
-  background-color: #000;
-  font-family: 'Roboto', sans-serif;
+background-color: #f8f9fa00;
+    font-family: 'Roboto', sans-serif;
 }
 nav.top1.navbar.navbar-default.navbar-static-top {
   background-color:rgb(6, 217, 149);
