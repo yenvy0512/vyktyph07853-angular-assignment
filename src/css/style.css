@@ -2308,7 +2308,7 @@ canvas#doughnut, canvas#line, canvas#polarArea, #bar, #pie, #radar {
   height: 160px !important;
 }
 #page-wrapper {
-  background: #f2f4f8;
+  background: #d33131;
 }
 .activity-desc h5 {
   font-size: 13px;

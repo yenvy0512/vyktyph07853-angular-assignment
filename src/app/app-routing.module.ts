@@ -12,16 +12,18 @@ const routes: Routes = [
    {path: 'home',component: HomeComponent},
  { path: '', redirectTo: '/home', pathMatch: 'full' },
  
-  {path: 'product',component: ManageComponent},
+
   {path: 'product-list',component: ProductListComponent},
-  {path: 'product-add',component: ProductAddComponent},
-      {path: 'product/edit/:productID', component: ProductEditComponent},
+  
+      
          {path: 'product/:id', component: ProductDetailComponent},
            {path: 'admin',component: AdminComponent,
 children:[
   {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
   {path: 'dashboard',component: DashboardComponent},
-   {path: 'manage',component: ManageComponent}
+   {path: 'manage',component: ManageComponent},
+   {path: 'product-add',component: ProductAddComponent},
+   {path: 'product/edit/:productID', component: ProductEditComponent}
 ]
   }
 ];
