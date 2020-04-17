@@ -142,19 +142,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
+                    <ul class="navbar-nav mr-auto" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                            <a routerLink="/admin/dashboard">Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-laptop nav_icon"></i>Product</a>
+                            <a routerLink="/admin/manage">Product</a>
                             
-                            <!-- /.nav-second-level -->
+                         
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-indent nav_icon"></i>Add Product</a>
+                            <a routerLink="/admin/product-add">Add Product</a>
                             
-                            <!-- /.nav-second-level -->
+                           
                         </li>
                         
                         
@@ -163,7 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         
                     </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
+             
             </div>
             <!-- /.navbar-static-side -->
         </nav>
@@ -175,26 +175,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <div class="form-group">
 
-      Product:<input type="text" name="name" class="form-control" placeholder="Product Name" [(ngModel)]="product.name">
-      <br>
-      <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
-      <br>
-       <input type="text" name="desc" class="form-control"placeholder="Desc" [(ngModel)]="product.desc">
-       <br>
-            <input type="text"      
-                    class="form-control"      
+      <input type="text" style="width:600px; height:50px; border: 2px solid black; border-radius: 4px;" name="name"  placeholder="Product Name" [(ngModel)]="product.name">
+      <br> <br> 
+      <input type="text" style="width:600px; height:50px; border: 2px solid black; border-radius: 4px;" name="price" placeholder="Price" [(ngModel)]="product.price">
+    <br> <br> 
+       <textarea  rows="5" type="text" style="width:600px; height:80px; border: 2px solid black; border-radius: 4px;" name="desc" placeholder="Desc" [(ngModel)]="product.desc"></textarea>
+       <br> <br> 
+            <input type="text" style="width:600px; height:50px; border: 2px solid black; border-radius: 4px;"     
+                     
                     value="{{product.status ? 'In stock' : 'Out stock'}}"
                     readonly
                 />
-      <br>
-                <input type="checkbox" 
+     <br> <br> 
+                <input type="checkbox" class="form-control"
                   name="status"
-                  class="form-control"
+                 
                   [(ngModel)]="product.status"
                   checked
                 />
-                <br>
-        <input type="text" name="img" class="form-control"placeholder="Src" [(ngModel)]="product.img">
+                <br> <br> 
+        <input type="text" style="width:600px; height:50px; border: 2px solid black; border-radius: 4px;"   name="img" placeholder="Src" [(ngModel)]="product.img">
     </div>
     <div class="first">
  <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>

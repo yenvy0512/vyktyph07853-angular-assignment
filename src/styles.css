@@ -17,9 +17,9 @@ border-style: ridge;
  padding-right: 50px;
 }
 .one1{
-  margin-top: 50px;
-border-style: ridge;
-    padding-left: 150px;
+     margin-top: -15px;
+
+    padding-left: 350px;
 padding-top: 50px;
  padding-right: 150px;
 }
@@ -39,6 +39,7 @@ padding-top: 50px;
   text-align: center;
   margin: 0 auto;
   padding-top: 70px;
+  margin-left: -100px;
   padding-bottom: 50px;
 }
 .quantity {
