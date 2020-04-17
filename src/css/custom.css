@@ -73,6 +73,7 @@
 }
 
 .sidebar .sidebar-nav.navbar-collapse {
+    padding-top: 90px;
     padding-right: 0;
     padding-left: 0;
 }
