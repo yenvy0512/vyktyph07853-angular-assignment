@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -18,7 +19,7 @@ import { ProductListComponent } from './frontend/product-list/product-list.compo
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { AdminComponent } from './backend/admin/admin.component';
 @NgModule({
-  imports:      [ BrowserModule,AppRoutingModule, FormsModule,AngularFontAwesomeModule,HttpClientModule ],
+  imports:      [ BrowserModule,AppRoutingModule, FormsModule,AngularFontAwesomeModule,HttpClientModule,NgbModule],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, HomeComponent, ProductAddComponent, ManageComponent, ProductEditComponent, ProductDetailComponent, ProductListComponent, DashboardComponent, AdminComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

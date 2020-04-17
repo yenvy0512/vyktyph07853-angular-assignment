@@ -190,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let product of products">
+                    <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
                         <td >{{product.name}}</td>
                         <td >${{product.price}}</td>
                         <td >{{product.desc}}</td>
@@ -209,6 +209,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 		</div>
        </div>
+                                               <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="products.length"></ngb-pagination>
       <!-- /#page-wrapper -->
 
     <!-- /#wrapper -->

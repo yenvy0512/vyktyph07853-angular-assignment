@@ -10,6 +10,8 @@ import { Product } from '../../Product';
   styleUrls: ['./manage.component.css']
 })
 export class ManageComponent implements OnInit {
+  page= 1;
+pageSize=6;
   selected: Product;
   products: Product[];
 
