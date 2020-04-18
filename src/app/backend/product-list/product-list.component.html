@@ -80,10 +80,10 @@
                     </div>
                     <div class="product-list">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-5" *ngFor="let product of products ">
+                            <div class="col-lg-4 col-sm-5" *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+                                        <a href="#"><img height="300px" class="card-img-top" [src]="product.img" alt=""></a>
                                         
                                     </div>
                                     <div class="pi-text">
@@ -111,9 +111,9 @@
             </div>
         </div>
     </section>
-                                        <!-- <ngb-pagination
+                                        <ngb-pagination
   [(page)]="page"
   [pageSize]="pageSize" class="d-flex justify-content-center"
-  [collectionSize]="products.length"></ngb-pagination> -->
+  [collectionSize]="products.length"></ngb-pagination>
       <app-footer></app-footer>
     
