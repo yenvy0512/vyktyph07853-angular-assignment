@@ -7,8 +7,8 @@ import { ProductService } from '../../product.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-page= 1;
-pageSize=6;
+// page= 1;
+// pageSize=6;
 selected: Product;
   products: Product[];
 
@@ -29,22 +29,7 @@ selected: Product;
       this.products = data;
      });
    }
-  // removeItem(id){
-  //   this.products = this.productService.removeProduct(id);
-  //   // this.products = this.products.filter(product => product.id != id);
-  // }
 
-
-
-  // changeStatus(){
-  //   // this.product.status = !this.product.status;
-  // }
-  // changeName(e){
-  //   // this.product.name = e.target.value;
-  // }
-  // removeItem(id){
-  //   this.products = this.products.filter(product => product.id != id);
-  // }
   showDetail(product){
     console.log(product);
     this.selected = product;

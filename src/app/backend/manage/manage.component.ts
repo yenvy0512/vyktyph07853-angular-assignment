@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../product.service';
-import { ActivatedRoute } from '@angular/router';
-import { Product } from '../../Product';
 
+import { Product } from '../../Product';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-manage',
@@ -16,7 +16,10 @@ pageSize=6;
   products: Product[];
 
   constructor(
-    private productService: ProductService
+
+        private route: ActivatedRoute,
+    private productService: ProductService,
+    private router: Router
   ) { 
     console.log('constructor')
   }
@@ -31,23 +34,13 @@ pageSize=6;
       this.products = data;
      });
    }
-   removeItem(id){
+  removeItem(id){
     this.productService.removeProduct(id).subscribe(response => {
      this.products = this.products.filter(product => product.id != response.id);
    })
-    // this.products = this.products.filter(product => product.id != id);
   }
 
 
-  // changeStatus(){
-  //   // this.product.status = !this.product.status;
-  // }
-  // changeName(e){
-  //   // this.product.name = e.target.value;
-  // }
-  // removeItem(id){
-  //   this.products = this.products.filter(product => product.id != id);
-  // }
   showDetail(product){
     console.log(product);
     this.selected = product;

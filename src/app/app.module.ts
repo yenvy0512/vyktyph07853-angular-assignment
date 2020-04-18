@@ -15,7 +15,7 @@ import { ProductAddComponent } from './backend/product-add/product-add.component
 import { ManageComponent } from './backend/manage/manage.component';
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
 import { ProductDetailComponent } from './frontend/product-detail/product-detail.component';
-import { ProductListComponent } from './frontend/product-list/product-list.component';
+import { ProductListComponent } from './backend/product-list/product-list.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { AdminComponent } from './backend/admin/admin.component';
 @NgModule({

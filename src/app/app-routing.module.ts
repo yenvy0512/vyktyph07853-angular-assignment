@@ -1,7 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './frontend/home/home.component';
-import { ProductListComponent } from './frontend/product-list/product-list.component';
+import { ProductListComponent } from './backend/product-list/product-list.component';
 import {ProductAddComponent } from './backend/product-add/product-add.component';
 import { ManageComponent } from './backend/manage/manage.component';
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
@@ -22,10 +22,10 @@ children:[
   {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
   {path: 'dashboard',component: DashboardComponent},
    {path: 'manage',component: ManageComponent},
-   {path: 'product-add',component: ProductAddComponent},
-   {path: 'product/edit/:productID', component: ProductEditComponent}
+   {path: 'product-add',component: ProductAddComponent}
+
 ]
-  }
+  },   {path: 'product/edit/:productID', component: ProductEditComponent}
 ];
 
 @NgModule({
